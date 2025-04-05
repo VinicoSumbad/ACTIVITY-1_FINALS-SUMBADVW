@@ -1,56 +1,61 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background: #f0f0f0;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .form-container {
     background: #fff;
-    width: 320px;
-    padding: 20px;
-    margin: 80px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
+/* Header */
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Form Elements */
 input[type="text"],
+input[type="email"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin: 0.5em 0;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: 6px;
+    box-sizing: border-box;
 }
 
+/* Buttons */
 button {
     width: 100%;
-    padding: 10px;
     background: #007bff;
     color: white;
+    padding: 10px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 6px;
     font-size: 16px;
+    margin-top: 1em;
+    cursor: pointer;
 }
 
 button:hover {
     background: #0056b3;
 }
 
-.success {
-    color: green;
-    margin-bottom: 10px;
-}
-
-.error {
-    color: red;
-    margin-bottom: 10px;
+/* Links */
+p {
+    text-align: center;
+    margin-top: 1em;
 }
 
 a {
@@ -58,11 +63,11 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Flash Messages */
+p.success {
+    color: green;
 }
 
-p {
-    margin-top: 10px;
-    text-align: center;
+p.error {
+    color: red;
 }
